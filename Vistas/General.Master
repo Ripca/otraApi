@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="Front.Vistas.General" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header style="width:100%; top:0; background-color:lightblue; position:fixed; height:50px;"></header>
+
+    <aside class="left-side" style="left:0; top:0;background-color:lightblue; height:100%; position:fixed;width:200px;" >
+        <div class="menu">
+            <ul style="padding-top:60px">
+                <li>
+                    <a href="VerUsuarios.aspx">
+                        <span>Ver Usuarios</span>
+                    </a>
+                </li>
+                                <li>
+                    <a href="RegistrarUsuarios.aspx">
+                        <span>Registrar</span>
+                    </a>
+                </li>
+                                <li>
+                    <a href="EliminarClientes.aspx">
+                        <span>EliminarUsuarios</span>
+                    </a>
+                </li>
+                                <li>
+                    <a href="ModificarUsuarios.aspx">
+                        <span>ModificarUsuarios</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </aside>
+    <aside  style="margin-left:200px;margin-top:50px">
+    <section >
+    <form id="form1" runat="server">
+        <div  class="right-side">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    </section>
+    </aside>
+</body>
+</html>
